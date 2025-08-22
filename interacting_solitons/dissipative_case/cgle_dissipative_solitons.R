@@ -70,9 +70,9 @@ ell    <- 0.3
 
 # ---------- Propagation (z) ----------
 dz         <- 0.005
-Zend       <- 20
+Zend       <- 200
 steps      <- ceiling(Zend / dz)
-save_every <- 40                 # ~1000 frames
+save_every <- 80                 # ~1000 frames
 
 # Linear propagator in ω (full step)
 # ∂_z A = (D + iβ) ∂_{tt} A  ->  Â(z+dz) = Â(z) * exp( - (D + iβ) w^2 dz )
