@@ -83,8 +83,8 @@ sech <- function(x) 1 / cosh(x)
 A0_1 <- function(t, eta, t0, phi){ eta * sech(eta*(t - t0)) * exp(1i*phi) }
 A0_2 <- function(t, eta, t0, phi){ eta * sech(eta*(t - t0)) * exp(1i*phi) }
 
-eta1 <- 1.0; t1 <- -12; phi1 <- 0.0
-eta2 <- 0.9; t2 <- +12; phi2 <- 0.0        # try phi2=pi for anti-bonding dynamics
+eta1 <- 10.0; t1 <- -12; phi1 <- 0.0
+eta2 <- 9; t2 <- +12; phi2 <- 0.0        # try phi2=pi for anti-bonding dynamics
 
 A <- A0_1(t, eta1, t1, phi1) + A0_2(t, eta2, t2, phi2)
 
