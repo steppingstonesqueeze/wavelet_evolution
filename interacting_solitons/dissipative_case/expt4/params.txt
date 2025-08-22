@@ -1,0 +1,5 @@
+beta 2.8
+dt 0.02
+eta1 10
+eta2 9
+Zend 200

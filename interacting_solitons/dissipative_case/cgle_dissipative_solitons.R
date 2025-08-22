@@ -56,7 +56,7 @@ w2    <- w^2
 # ---------- Model parameters (choose a stable DS window) ----------
 # Linear: spectral filtering D (>0), dispersion β (sign per convention: β>0 ~ anomalous)
 D      <- 0.02
-beta   <- 0.8
+beta   <- 2.8
 
 # Nonlinear: Kerr γ, saturable absorber s (>0), quintic ν (stabilizer; can be 0)
 gamma  <- 1.0
@@ -69,7 +69,7 @@ Esat   <- 6.0
 ell    <- 0.3
 
 # ---------- Propagation (z) ----------
-dz         <- 0.005
+dz         <- 0.02
 Zend       <- 200
 steps      <- ceiling(Zend / dz)
 save_every <- 80                 # ~1000 frames
